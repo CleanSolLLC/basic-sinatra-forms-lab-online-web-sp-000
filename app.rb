@@ -16,11 +16,12 @@ class App < Sinatra::Base
  
     @sg = params[:sg]
  
- <p><b>Small Forward: params[:sf]</b></p>
+    @sf = params[:sf]
  
- <p><b>Power Forward: params[:pf]</b></p>
+    @pf = params[:pf]
  
- <p><b>Center: params[:c]</b></p>
+    @c = params[:c]
+    
     erb :team
   end
 
