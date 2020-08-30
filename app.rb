@@ -7,7 +7,7 @@ class App < Sinatra::Base
     erb :newteam
   end
   
-  get '/team' do
+  get '/newteam' do
     
    raise params.inspect
     erb :team
