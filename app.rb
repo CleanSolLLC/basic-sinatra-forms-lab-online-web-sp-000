@@ -7,7 +7,20 @@ class App < Sinatra::Base
   end
   
   post '/team' do
-    raise params.inspect
+    
+    @team = params[:name]
+ 
+    @coach = params[:coach]
+ 
+    @pg = params[:pg]
+ 
+    @sg = params[:sg]
+ 
+ <p><b>Small Forward: params[:sf]</b></p>
+ 
+ <p><b>Power Forward: params[:pf]</b></p>
+ 
+ <p><b>Center: params[:c]</b></p>
     erb :team
   end
 
