@@ -12,5 +12,7 @@ class App < Sinatra::Base
    raise params.inspect
     erb :team
   end
+  
+  get 'team' do
 
 end
