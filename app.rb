@@ -8,6 +8,7 @@ class App < Sinatra::Base
   end
   
   post '/team' do
+    
    raise params.inspect
     erb :team
   end
